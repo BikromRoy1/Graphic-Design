@@ -6989,3 +6989,125 @@ body.loaded {
 .contact-section .contact-info-list .text-box a:hover {
   color: var(--color-primary);
 }
+/* ============================================================== 
+     # start: Counter Area
+=================================================================== */
+.counter-section {
+  background-color: var(--bg-gray);
+  padding: 85px 0;
+}
+.bg-dark .counter-section {
+  background-color: #0f0715;
+}
+.funfact-item {
+  gap: 15px;
+}
+.funfact-item .number {
+  font-size: 80px;
+  background: var(--bg-gradient);
+  line-height: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.funfact-item .number span {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+/* ============================================================== 
+     # Skills section css 
+=================================================================== */
+.skills-widget {
+  gap: 20px;
+  row-gap: 30px;
+}
+.skills-widget .skill-item {
+  max-width: 180px;
+  width: 100%;
+  text-align: center;
+}
+.skills-widget .skill-inner {
+  border-radius: 25px;
+  padding: 40px 15px 30px;
+  background: linear-gradient(130deg, var(--white) 20%, #ecf0f3 100%);
+  border: 2px solid transparent;
+  margin-bottom: 15px;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  box-shadow: 0 0 9px 0 rgb(109 117 143 / 5%);
+}
+.bg-dark .skills-widget .skill-inner {
+  background: linear-gradient(50deg, #121212 20%, #1d1c1c 100%);
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+.skills-widget .skill-item:hover .skill-inner {
+  background: #0f0715;
+  border: 2px solid var(--color-primary);
+}
+.skills-widget .skill-item .icon-box {
+  max-width: 60px;
+  width: 100%;
+  margin: 0 auto 30px;
+  opacity: 1;
+}
+.skills-widget .skill-item:hover .icon-box {
+  opacity: 1;
+}
+.skills-widget .skill-item .icon-box img {
+  filter: grayscale(10%);
+  -webkit-filter: grayscale(10%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.skills-widget .skill-item:hover .icon-box img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.skills-widget .skill-item .number {
+  color: var(--color-heading);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+}
+.bg-dark .skills-widget .skill-item .number {
+  color: #747779;
+}
+.skills-widget .skill-item:hover .number {
+  color: var(--color-primary);
+}
+
+.skills-widget .skill-item p {
+  color: var(--color-paragraph);
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.bg-dark .skills-widget .skill-item p {
+  color: var(--white);
+}
+
+.bg-dark .skills-widget .skill-item .icon-box img {
+  filter: grayscale(90%);
+  transition: 0.3s;
+}
+
+.bg-dark .skills-widget .skill-item:hover .icon-box img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
