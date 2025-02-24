@@ -1408,11 +1408,11 @@
                         <ul class="foter-menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="service.html">Services</a></li>
-                            <li><a href="projects.html">Portfolio</a></li>
-                            <li><a href="blog-with-sidebar.html">Blog</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                        <p>Copyright � 2024 Antux. All Rights Reserved</p>
+                        <p>Copyright @ <span id="year"></span> Shingmay Chowdhury. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
@@ -1508,6 +1508,10 @@
                 }
             });
         });
+        /* footer year */
+        var yearElement = document.getElementById("year");
+        if (yearElement) { yearElement.innerHTML = new Date().getFullYear(); }
+        /* footer year */
     </script>
 
 
