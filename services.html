@@ -59,7 +59,7 @@
     <header>
         <!-- Start Navigation -->
         <nav class="navbar mobile-sidenav navbar-box navbar-default validnavs navbar-sticky">
-    
+
             <!-- Start Top Search -->
             <div class="top-search">
                 <div class="container-xl">
@@ -71,10 +71,10 @@
                 </div>
             </div>
             <!-- End Top Search -->
-    
-    
+
+
             <div class="container nav-box d-flex justify-content-between align-items-center">
-    
+
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -82,19 +82,19 @@
                     </button>
                     <a class="navbar-brand" href="index.html">
                         <img src="images/logo-light.png" id="logo" class="logo" alt="Logo">
-    
+
                     </a>
                 </div>
                 <!-- End Header Navigation -->
-    
+
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
-    
+
                     <img src="images/logo-light.png" alt="Logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
-    
+
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li>
                             <a class="smooth-menu" href="index.html">Home</a>
@@ -116,7 +116,7 @@
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-    
+
                 <div class="nav-right">
                     <div class="attr-right">
                         <!-- Start Atribute Navigation -->
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Overlay screen for menu -->
             <div class="overlay-screen"></div>
             <!-- End Overlay screen for menu -->
@@ -394,23 +394,33 @@
         document.addEventListener("DOMContentLoaded", function () {
             const themeToggler = document.getElementById("rs-theme-toggler");
             const body = document.body;
+            const logo = document.getElementById("logo");
 
-            // Check if dark mode was enabled previously
+
             if (localStorage.getItem("theme") === "dark") {
                 body.classList.add("bg-dark");
                 themeToggler.checked = true;
+                logo.src = "images/logo-dark.png";
+            } else {
+                logo.src = "images/logo-light.png";
             }
 
             themeToggler.addEventListener("change", function () {
                 if (this.checked) {
                     body.classList.add("bg-dark");
                     localStorage.setItem("theme", "dark");
+                    logo.src = "images/logo-dark.png";
                 } else {
                     body.classList.remove("bg-dark");
                     localStorage.setItem("theme", "light");
+                    logo.src = "images/logo-light.png";
                 }
             });
         });
+        /* footer year */
+        var yearElement = document.getElementById("year");
+        if (yearElement) { yearElement.innerHTML = new Date().getFullYear(); }
+        /* footer year */
     </script>
 
 

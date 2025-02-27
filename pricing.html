@@ -414,23 +414,33 @@
         document.addEventListener("DOMContentLoaded", function () {
             const themeToggler = document.getElementById("rs-theme-toggler");
             const body = document.body;
+            const logo = document.getElementById("logo");
 
-            // Check if dark mode was enabled previously
+
             if (localStorage.getItem("theme") === "dark") {
                 body.classList.add("bg-dark");
                 themeToggler.checked = true;
+                logo.src = "images/logo-dark.png";
+            } else {
+                logo.src = "images/logo-light.png";
             }
 
             themeToggler.addEventListener("change", function () {
                 if (this.checked) {
                     body.classList.add("bg-dark");
                     localStorage.setItem("theme", "dark");
+                    logo.src = "images/logo-dark.png";
                 } else {
                     body.classList.remove("bg-dark");
                     localStorage.setItem("theme", "light");
+                    logo.src = "images/logo-light.png";
                 }
             });
         });
+        /* footer year */
+        var yearElement = document.getElementById("year");
+        if (yearElement) { yearElement.innerHTML = new Date().getFullYear(); }
+        /* footer year */
     </script>
 
 
