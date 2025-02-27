@@ -3193,7 +3193,7 @@ xclip
 }
 
 .banner-style-one-items h1 {
-  font-size: 65px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -3217,6 +3217,7 @@ xclip
 
 .banner-style-one-items h2 b {
   font-weight: 600;
+  font-size: 30px !important;
 }
 
 .banner-style-one-items .d-grid {
@@ -5553,7 +5554,7 @@ footer::after {
   }
 
   .banner-style-one-items h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .banner-style-one-items h2 {
@@ -5953,7 +5954,7 @@ footer::after {
   }
 
   .banner-style-one-items h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.2;
     margin-bottom: 25px;
   }
@@ -7110,4 +7111,232 @@ body.loaded {
 .bg-dark .skills-widget .skill-item:hover .icon-box img {
   filter: grayscale(0);
   transform: scale(1.1);
+}
+
+/* !END: Theme Maquee CSS */
+/**----------------------------------------
+START: Theme About CSS
+----------------------------------------*/
+.tj-about-section.style-8 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.tj-about-section.style-8 .section-header {
+  margin-bottom: 20px;
+}
+.section-header.style-5 .subtitle {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-header.style-5 .title {
+    font-size: 44px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+    display: block;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tj-about-section.style-8 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .tj-about-section.style-8 {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+}
+
+.about-wrapper-8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 35px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .about-wrapper-8 {
+    gap: 50px;
+  }
+}
+
+.about-8-images {
+  max-width: 515px;
+  width: 100%;
+  position: relative;
+  border-radius: 120px 14px 14px 14px;
+  z-index: 1;
+}
+.about-8-images img {
+  position: relative;
+  border-radius: 120px 14px 14px 14px;
+  z-index: 3;
+}
+.about-8-images::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 405px;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(var(--color-primary)), color-stop(#f54200), color-stop(var(--color-primary)), color-stop(#f54200), color-stop(var(--color-primary)), to(#f54200));
+  background: linear-gradient(90deg, var(--color-primary), #f54200, var(--color-primary), #f54200, var(--color-primary), #f54200);
+  background-size: 600% 100%;
+  -webkit-animation: gradient 15s linear infinite;
+          animation: gradient 15s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  border-radius: 120px 14px 14px 14px;
+  z-index: 2;
+}
+.about-8-images::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 405px;
+  bottom: 10px;
+  left: -10px;
+  border-radius: 120px 14px 14px 14px;
+  border: 2px solid var(--color-primary);;
+  -webkit-box-shadow: 0px 0px 18px 0px rgb(236, 140, 76) inset;
+          box-shadow: 0px 0px 18px 0px rgb(236, 140, 76) inset;
+  z-index: 1;
+}
+.about-8-images .about_shapes {
+  position: absolute;
+  top: 120px;
+  right: 30px;
+  left: auto;
+  max-width: 50px;
+  width: 100%;
+  z-index: 2;
+}
+.about-8-images .about_shapes img {
+  width: 100%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-8-images {
+    max-width: 390px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .about-8-images {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 575px) {
+  .about-8-images {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-8-images::before {
+    height: 300px;
+  }
+  .about-8-images::after {
+    height: 295px;
+    left: -5px;
+  }
+}
+
+.about-8-content {
+  max-width: 630px;
+  width: 100%;
+  margin-left: auto;
+}
+.about-8-content .desc {
+  color: #747779;
+  max-width: 510px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.about-8-content .desc p:last-child {
+  margin-bottom: 0;
+}
+.about-8-content .about-button {
+  margin-top: 35px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-8-content {
+    max-width: 560px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-8-content {
+    max-width: 510px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .about-8-content {
+    margin-left: 0;
+  }
+  .about-8-content .about-button {
+    margin-top: 25px;
+  }
+}
+
+.list-style-two {
+  max-width: 420px;
+}
+.list-style-two ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
+.list-style-two ul li {
+  color: #fff;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 20px;
+  z-index: 1;
+}
+.list-style-two ul li::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+}
+@media (max-width: 575px) {
+  .list-style-two ul li {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
 }
